@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|6ccee667-819c-4964-876e-b49c71511a67
+C:\Users\DELL2\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|daa0c600-8bdf-4e75-b9c7-b3f53b68007e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2201d079-995f-4c8d-bad6-a94177703e09
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|0d879207-5fb0-4ff9-8602-7fe58e728091
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|352eea45-4649-4bcf-b316-45fc39aab6f6
+E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\CY8C4045AZI_S413_TOUCH_PANEL.cyprj|5598f3f7-0f04-4358-bb71-cca78d66b4ec
