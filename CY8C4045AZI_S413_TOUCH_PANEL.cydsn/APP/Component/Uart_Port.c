@@ -24,6 +24,7 @@ extern "C" {
 #endif
 /** Private typedef ----------------------------------------------------------*/
 /** Private macros -----------------------------------------------------------*/
+#define USE_LOOPBACK    0/**< 是否使用回显-转发收到的数据*/
 /** Private constants --------------------------------------------------------*/
 /** Public variables ---------------------------------------------------------*/
 /** Private variables --------------------------------------------------------*/
@@ -54,9 +55,75 @@ static void Uart_Port_ISR_Callback(void);/**< 串口中断服务*/
   */
 static void Uart_Port_ISR_Callback(void)
 {
-  /*接收数据*/
-  uint8_t Byte = (uint8_t)(UART_1_UartGetByte()&0x000000FF);
-  CQ_putData(&Uart_1_CQ_Handle, (const uint8_t*)&Byte, 1);
+  uint8_t Byte = 0;
+  uint32 ISR_Flag = UART_1_GetInterruptCause();
+  
+  /*清除未决中断*/
+  UART_1_ClearPendingInt();
+  switch(ISR_Flag)
+  {
+    case UART_1_INTR_CAUSE_RX:
+      if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_NOT_EMPTY)
+      {
+        UART_1_ClearRxInterruptSource(UART_1_INTR_RX_NOT_EMPTY);
+        
+        /*接收数据*/
+        if(UART_1_SpiUartGetRxBufferSize() > 0)
+        {
+          Byte = (uint8_t)(UART_1_UartGetByte()&0xFF);
+          CQ_putData(&Uart_1_CQ_Handle, (const uint8_t*)&Byte, 1);
+#if USE_LOOPBACK
+          Uart_Port_Send_Data((const uint8_t*)&Byte, 1);
+#endif
+        }
+      }
+      else
+      {
+        /*出现错误*/
+/*  
+*   - UART_1_INTR_RX_FIFO_LEVEL - The number of data elements in the 
+      RX FIFO is greater than the value of RX FIFO level.
+*   - UART_1_INTR_RX_OVERFLOW - Attempt to write to a full 
+*     receiver FIFO.
+*   - UART_1_INTR_RX_UNDERFLOW - Attempt to read from an empty 
+*     receiver FIFO.
+*   - UART_1_INTR_RX_FRAME_ERROR - UART framing error detected.
+*   - UART_1_INTR_RX_PARITY_ERROR - UART parity error detected.
+*/
+        if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_OVERFLOW)
+        {
+          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_OVERFLOW);
+        }
+        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_UNDERFLOW)
+        {
+          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_UNDERFLOW);
+        }
+        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_FRAME_ERROR)
+        {
+          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_FRAME_ERROR);
+        }
+        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_PARITY_ERROR)
+        {
+          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_PARITY_ERROR);
+        }
+        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_FIFO_LEVEL)
+        {
+          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_FIFO_LEVEL);
+        }
+      }
+      break;
+    case UART_1_INTR_CAUSE_TX:
+      /*TODO*/
+      break;
+    case UART_1_INTR_CAUSE_MASTER:
+      /*TODO*/
+      break;
+    case UART_1_INTR_CAUSE_SLAVE:
+      /*TODO*/
+      break;
+    default:
+      break;
+  }
 }
 
 /** Public application code --------------------------------------------------*/
@@ -66,6 +133,21 @@ static void Uart_Port_ISR_Callback(void)
 *
 ********************************************************************************
 */
+/**
+  ******************************************************************
+  * @brief   串口发送字符串
+  * @param   [in]Str 字符串
+  * @return  None.
+  * @author  aron566
+  * @version V1.0
+  * @date    2021-03-20
+  ******************************************************************
+  */
+void Uart_Port_Print(const char *Str)
+{
+  UART_1_UartPutString(Str);
+}
+
 /**
   ******************************************************************
   * @brief   串口缓冲区句柄

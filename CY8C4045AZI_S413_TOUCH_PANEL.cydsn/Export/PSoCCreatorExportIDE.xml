@@ -232,6 +232,8 @@
         <Files Root="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn">
           <File BuildType="BUILD" Toolchain="">APP\Protocol\Protocol.c</File>
           <File BuildType="BUILD" Toolchain="">APP\Protocol\Protocol.h</File>
+          <File BuildType="BUILD" Toolchain="">APP\Protocol\Response_List.c</File>
+          <File BuildType="BUILD" Toolchain="">APP\Protocol\Response_List.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn">

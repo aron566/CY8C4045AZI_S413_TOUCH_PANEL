@@ -39,6 +39,8 @@ extern "C" {
 void Uart_Port_Init(void);
 /*串口发送接口*/
 void Uart_Port_Send_Data(const uint8_t *data, uint32_t Size);
+/*串口发送字符串*/
+void Uart_Port_Print(const char *Str);
 /*获取串口环形缓冲区句柄*/
 CQ_handleTypeDef *Uart_Port_Get_CQ_Handle(void);
 
