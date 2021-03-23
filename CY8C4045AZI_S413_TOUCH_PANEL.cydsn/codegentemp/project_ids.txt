@@ -1,8 +1,6 @@
-E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\CY8C4045AZI_S413_TOUCH_PANEL.cyprj|bc85fe9f-0c74-4216-a426-7e74b2df2015
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|ef3b4079-a55e-4210-ba12-9dc7f865d3b7
-C:\Users\DELL2\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|0665a98c-7186-4bea-a084-1295f291c5ef
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|9c80bfe8-f0b9-4557-8205-6a93c8ebc455
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cf0d5cc9-c91a-44ba-9bee-3a263d17135f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f40d299b-a533-4f03-9d43-99c6497712ba
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|e1bf0f13-a990-4e64-a359-051fc61a5762
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|7153c3d2-932f-475a-9cf3-56d29e41b7a1
+E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\CY8C4045AZI_S413_TOUCH_PANEL.cyprj|148674ff-b707-42af-a0da-3a5f9e88cfb3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|7b1231b2-a0e6-4a1a-a251-566c14d89803
+C:\Users\DELL2\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|e9a31f01-3290-4b42-aca6-d2c1d88a9389
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|78a0042a-97d1-4ab4-b217-dd964c2a4839
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5a61acb3-45cb-4ad1-a74d-9bfb355ce52f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|5ebbe996-c9a5-4022-a382-a0e80e6c24a9

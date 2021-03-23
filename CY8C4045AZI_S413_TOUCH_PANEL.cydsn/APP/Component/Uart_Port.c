@@ -59,11 +59,11 @@ static void Uart_Port_ISR_Callback(void)
   uint32 ISR_Flag = UART_1_GetInterruptCause();
   
   /*清除未决中断*/
-  UART_1_ClearPendingInt();
+  //UART_1_ClearPendingInt();
   switch(ISR_Flag)
   {
     case UART_1_INTR_CAUSE_RX:
-      if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_NOT_EMPTY)
+      if(UART_1_GetRxInterruptSource() & UART_1_INTR_RX_NOT_EMPTY)
       {
         UART_1_ClearRxInterruptSource(UART_1_INTR_RX_NOT_EMPTY);
         
@@ -77,9 +77,7 @@ static void Uart_Port_ISR_Callback(void)
 #endif
         }
       }
-      else
-      {
-        /*出现错误*/
+/*出现错误*/
 /*  
 *   - UART_1_INTR_RX_FIFO_LEVEL - The number of data elements in the 
       RX FIFO is greater than the value of RX FIFO level.
@@ -90,27 +88,27 @@ static void Uart_Port_ISR_Callback(void)
 *   - UART_1_INTR_RX_FRAME_ERROR - UART framing error detected.
 *   - UART_1_INTR_RX_PARITY_ERROR - UART parity error detected.
 */
-        if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_OVERFLOW)
-        {
-          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_OVERFLOW);
-        }
-        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_UNDERFLOW)
-        {
-          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_UNDERFLOW);
-        }
-        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_FRAME_ERROR)
-        {
-          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_FRAME_ERROR);
-        }
-        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_PARITY_ERROR)
-        {
-          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_PARITY_ERROR);
-        }
-        else if(UART_1_GetRxInterruptSource() == UART_1_INTR_RX_FIFO_LEVEL)
-        {
-          UART_1_ClearRxInterruptSource(UART_1_INTR_RX_FIFO_LEVEL);
-        }
+      else if(UART_1_GetRxInterruptSource() & UART_1_INTR_RX_OVERFLOW)
+      {
+        UART_1_ClearRxInterruptSource(UART_1_INTR_RX_OVERFLOW);
       }
+      else if(UART_1_GetRxInterruptSource() & UART_1_INTR_RX_UNDERFLOW)
+      {
+        UART_1_ClearRxInterruptSource(UART_1_INTR_RX_UNDERFLOW);
+      }
+      else if(UART_1_GetRxInterruptSource() & UART_1_INTR_RX_FRAME_ERROR)
+      {
+        UART_1_ClearRxInterruptSource(UART_1_INTR_RX_FRAME_ERROR);
+      }
+      else if(UART_1_GetRxInterruptSource() & UART_1_INTR_RX_PARITY_ERROR)
+      {
+        UART_1_ClearRxInterruptSource(UART_1_INTR_RX_PARITY_ERROR);
+      }
+      else if(UART_1_GetRxInterruptSource() & UART_1_INTR_RX_FIFO_LEVEL)
+      {
+        UART_1_ClearRxInterruptSource(UART_1_INTR_RX_FIFO_LEVEL);
+      }
+      
       break;
     case UART_1_INTR_CAUSE_TX:
       /*TODO*/
@@ -124,6 +122,8 @@ static void Uart_Port_ISR_Callback(void)
     default:
       break;
   }
+  UART_1_rx_ClearInterrupt();
+//  UART_1_SCB_IRQ_ClearPending();
 }
 
 /** Public application code --------------------------------------------------*/

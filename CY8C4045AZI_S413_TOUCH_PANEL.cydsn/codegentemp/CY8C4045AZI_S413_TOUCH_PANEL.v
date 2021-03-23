@@ -1,6 +1,6 @@
 // ======================================================================
 // CY8C4045AZI_S413_TOUCH_PANEL.v generated from TopDesign.cysch
-// 03/20/2021 at 16:00
+// 03/23/2021 at 13:06
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1458,7 +1458,7 @@ module top ;
           wire  Net_1284;
           wire  Net_1283;
           wire  Net_1282;
-          wire  Net_1276;
+          wire  Net_1290;
           wire  Net_1275;
           wire  Net_1274;
           wire  Net_1273;
@@ -1467,7 +1467,7 @@ module top ;
           wire  Net_1270;
           wire  Net_1269;
           wire  Net_1268;
-          wire  Net_1267;
+          wire  Net_1287;
           wire  Net_1266;
           wire  Net_1265;
           wire  Net_1264;
@@ -2347,7 +2347,7 @@ module top ;
         .scl_b(Net_1273),
         .sda_b(Net_1274),
         .tx_dma_out(Net_1275),
-        .tx_out(Net_1276));
+        .tx_out(Net_1290));
 
     cy_annotation_universal_v1_0 SW_Vol_Increase (
         .connect({

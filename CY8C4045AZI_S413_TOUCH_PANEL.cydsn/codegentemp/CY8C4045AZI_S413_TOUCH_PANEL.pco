@@ -1,5 +1,5 @@
 # CY8C4045AZI_S413_TOUCH_PANEL
-# 2021-03-20 08:00:59Z
+# 2021-03-23 05:06:58Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
