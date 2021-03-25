@@ -1,5 +1,5 @@
 -- Project:   CY8C4045AZI_S413_TOUCH_PANEL
--- Generated: 03/23/2021 13:06:57
+-- Generated: 03/25/2021 10:24:20
 -- PSoC Creator  4.4
 
 ENTITY CY8C4045AZI_S413_TOUCH_PANEL IS
@@ -145,7 +145,6 @@ ARCHITECTURE __DEFAULT__ OF CY8C4045AZI_S413_TOUCH_PANEL IS
     ATTRIBUTE Location OF \CapSense:Tx(0)\ : LABEL IS "P1[3]";
     ATTRIBUTE Location OF \CapSense:Cmod(0)\ : LABEL IS "P4[1]";
     ATTRIBUTE Location OF LED8(0) : LABEL IS "P2[4]";
-    ATTRIBUTE Location OF LED9(0) : LABEL IS "P3[4]";
     ATTRIBUTE Location OF LED10(0) : LABEL IS "P3[5]";
     ATTRIBUTE Location OF LED11(0) : LABEL IS "P3[6]";
     ATTRIBUTE Location OF LED4(0) : LABEL IS "P2[0]";
@@ -156,8 +155,8 @@ ARCHITECTURE __DEFAULT__ OF CY8C4045AZI_S413_TOUCH_PANEL IS
     ATTRIBUTE Location OF \UART_1:rx(0)\ : LABEL IS "P0[4]";
     ATTRIBUTE Location OF Power_ON_OFF(0) : LABEL IS "P0[7]";
     ATTRIBUTE Location OF Set_Mode(0) : LABEL IS "P1[2]";
-    ATTRIBUTE Location OF Vol_Decrease(0) : LABEL IS "P1[7]";
-    ATTRIBUTE Location OF Vol_Increase(0) : LABEL IS "P2[6]";
+    ATTRIBUTE Location OF Vol_Decrease(0) : LABEL IS "P2[5]";
+    ATTRIBUTE Location OF Vol_Increase(0) : LABEL IS "P3[4]";
     ATTRIBUTE Location OF \CapSense:CSD\ : LABEL IS "F(CSD,0)";
     ATTRIBUTE Location OF \CapSense:IDACMod\ : LABEL IS "F(CSIDAC7,0)";
     ATTRIBUTE Location OF \CapSense:IDACComp\ : LABEL IS "F(CSIDAC7,1)";
@@ -2136,7 +2135,7 @@ BEGIN
             drive_mode => "001",
             ibuf_enabled => "1",
             id => "cf76f6d1-2c17-400b-8db3-d8be20971188",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
             input_sync => "0",
@@ -2226,7 +2225,7 @@ BEGIN
             drive_mode => "001",
             ibuf_enabled => "1",
             id => "467ddb46-4372-4fa6-81be-4fed94046354",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
             input_sync => "0",
@@ -2316,7 +2315,7 @@ BEGIN
             drive_mode => "001",
             ibuf_enabled => "1",
             id => "49dca018-aad6-401a-83e1-0d6f71c3e5f0",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
             input_sync => "0",
@@ -2406,7 +2405,7 @@ BEGIN
             drive_mode => "001",
             ibuf_enabled => "1",
             id => "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
             input_sync => "0",

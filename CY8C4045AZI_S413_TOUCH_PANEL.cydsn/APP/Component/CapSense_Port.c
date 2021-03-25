@@ -121,7 +121,7 @@ static void LED_Control(void)
   centroid = CapSense_GetCentroidPos(CapSense_SLD_WDGT_ID);
 
   /*Turn ON/OFF LEDs based on the status of the corresponding CapSense buttons*/
-  LED9_Write(CapSense_IsWidgetActive(CapSense_BTN0_WDGT_ID) ? LED_ON : LED_OFF );
+//  LED9_Write(CapSense_IsWidgetActive(CapSense_BTN0_WDGT_ID) ? LED_ON : LED_OFF );/**< 开发板LED9 3.4脚给increase按键用*/
   LED10_Write(CapSense_IsWidgetActive(CapSense_BTN1_WDGT_ID) ? LED_ON : LED_OFF );
   LED11_Write(CapSense_IsWidgetActive(CapSense_BTN2_WDGT_ID) ? LED_ON : LED_OFF );
 

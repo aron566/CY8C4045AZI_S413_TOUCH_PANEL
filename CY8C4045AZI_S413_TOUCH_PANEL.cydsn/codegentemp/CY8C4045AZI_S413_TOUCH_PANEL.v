@@ -1,6 +1,6 @@
 // ======================================================================
 // CY8C4045AZI_S413_TOUCH_PANEL.v generated from TopDesign.cysch
-// 03/23/2021 at 13:06
+// 03/25/2021 at 10:24
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1454,7 +1454,7 @@ endmodule
 // top
 module top ;
 
-          wire  Net_1285;
+          wire  Net_1298;
           wire  Net_1284;
           wire  Net_1283;
           wire  Net_1282;
@@ -1503,15 +1503,11 @@ module top ;
           wire  Net_1166;
           wire  Net_1165;
           wire  Net_1164;
+    electrical  Net_279;
     electrical  Net_345;
     electrical  Net_281;
-    electrical  Net_279;
     electrical  Net_347;
     electrical  Net_317;
-    electrical  Net_288;
-    electrical  Net_291;
-    electrical  Net_292;
-    electrical  Net_293;
     electrical  Net_322;
     electrical  Net_798;
     electrical  Net_404;
@@ -2351,7 +2347,7 @@ module top ;
 
     cy_annotation_universal_v1_0 SW_Vol_Increase (
         .connect({
-            Net_293,
+            Net_322,
             Net_345
         })
     );
@@ -2361,7 +2357,7 @@ module top ;
 
     cy_annotation_universal_v1_0 SW_Vol_Decrease (
         .connect({
-            Net_292,
+            Net_322,
             Net_279
         })
     );
@@ -2371,7 +2367,7 @@ module top ;
 
     cy_annotation_universal_v1_0 SW_Set_Mode (
         .connect({
-            Net_291,
+            Net_322,
             Net_347
         })
     );
@@ -2381,7 +2377,7 @@ module top ;
 
     cy_annotation_universal_v1_0 SW_Power (
         .connect({
-            Net_288,
+            Net_322,
             Net_281
         })
     );
@@ -2398,46 +2394,6 @@ module top ;
     defparam PWR_2.port_names = "T1";
     defparam PWR_2.width = 1;
 
-    cy_annotation_universal_v1_0 R_5 (
-        .connect({
-            Net_322,
-            Net_293
-        })
-    );
-    defparam R_5.comp_name = "Resistor_v1_0";
-    defparam R_5.port_names = "T1, T2";
-    defparam R_5.width = 2;
-
-    cy_annotation_universal_v1_0 R_6 (
-        .connect({
-            Net_322,
-            Net_292
-        })
-    );
-    defparam R_6.comp_name = "Resistor_v1_0";
-    defparam R_6.port_names = "T1, T2";
-    defparam R_6.width = 2;
-
-    cy_annotation_universal_v1_0 R_7 (
-        .connect({
-            Net_322,
-            Net_291
-        })
-    );
-    defparam R_7.comp_name = "Resistor_v1_0";
-    defparam R_7.port_names = "T1, T2";
-    defparam R_7.width = 2;
-
-    cy_annotation_universal_v1_0 R_8 (
-        .connect({
-            Net_322,
-            Net_288
-        })
-    );
-    defparam R_8.comp_name = "Resistor_v1_0";
-    defparam R_8.port_names = "T1, T2";
-    defparam R_8.width = 2;
-
 	wire [0:0] tmpOE__Power_ON_OFF_net;
 	wire [0:0] tmpIO_0__Power_ON_OFF_net;
 	wire [0:0] tmpINTERRUPT_0__Power_ON_OFF_net;
@@ -2447,7 +2403,7 @@ module top ;
 		#(.id("cf76f6d1-2c17-400b-8db3-d8be20971188"),
 		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
@@ -2541,7 +2497,7 @@ module top ;
 		#(.id("467ddb46-4372-4fa6-81be-4fed94046354"),
 		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
@@ -2615,7 +2571,7 @@ module top ;
 		#(.id("49dca018-aad6-401a-83e1-0d6f71c3e5f0"),
 		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
@@ -2709,7 +2665,7 @@ module top ;
 		#(.id("8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba"),
 		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
@@ -2761,7 +2717,7 @@ module top ;
 		Vol_Increase
 		 (.oe(tmpOE__Vol_Increase_net),
 		  .y({1'b0}),
-		  .fb({Net_1285}),
+		  .fb({Net_1298}),
 		  .io({tmpIO_0__Vol_Increase_net[0:0]}),
 		  .siovref(tmpSIOVREF__Vol_Increase_net),
 		  .interrupt({tmpINTERRUPT_0__Vol_Increase_net[0:0]}),

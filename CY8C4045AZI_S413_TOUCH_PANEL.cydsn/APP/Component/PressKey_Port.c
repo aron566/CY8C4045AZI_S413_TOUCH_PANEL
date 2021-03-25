@@ -207,7 +207,47 @@ static uint8_t Touch_Key_Read(void)
 *
 ********************************************************************************
 */
-
+/**
+  ******************************************************************
+  * @brief   按键检测事件调试
+  * @param   [in]None
+  * @return  None.
+  * @author  aron566
+  * @version V1.0
+  * @date    2021-03-25
+  ******************************************************************
+  */
+#if USE_DEBUG_PRESSKEY
+void PressKey_Port_Start(void)
+{
+	switch(get_button_event(&Power_key_Handle))
+  {
+    case PRESS_DOWN:/**< 按键按下，每次按下都触发*/
+      UART_1_UartPutString("PRESS_DOWN.\r\n");
+      break;
+    case PRESS_UP:/**< 按键弹起，每次松开都触发*/
+      UART_1_UartPutString("PRESS_UP.\r\n");
+      break;
+    case PRESS_REPEAT:/**< 重复按下触发，变量repeat计数连击次数*/
+      UART_1_UartPutString("PRESS_REPEAT.\r\n");
+      break;
+    case SINGLE_CLICK:/**< 单击按键事件*/
+      UART_1_UartPutString("SINGLE_CLICK.\r\n");
+      break;
+    case DOUBLE_CLICK:/**< 双击按键事件*/
+      UART_1_UartPutString("DOUBLE_CLICK.\r\n");
+      break;
+    case LONG_PRESS_START:/**< 达到长按时间阈值时触发一次*/
+      UART_1_UartPutString("LONG_PRESS_START.\r\n");
+      break;
+    case LONG_PRESS_HOLD:/**< 长按期间一直触发*/
+      UART_1_UartPutString("LONG_PRESS_HOLD.\r\n");
+      break;
+    default:
+      break;
+  }							
+}
+#endif
 /**
   ******************************************************************
   * @brief   按键检测初始化

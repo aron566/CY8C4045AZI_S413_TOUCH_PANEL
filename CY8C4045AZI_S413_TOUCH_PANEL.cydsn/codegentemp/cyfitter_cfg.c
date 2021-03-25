@@ -301,22 +301,22 @@ void cyfitter_cfg(void)
 
 	/* Perform second pass device configuration. These items must be configured in specific order after the regular configuration is done. */
 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
-	CY_SET_REG32((void *)(CYDEV_GPIO_PRT0_BASE), 0x0000006Eu);
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT0_BASE), 0x000000EEu);
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC), 0x00231000u);
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC2), 0x0000006Fu);
 
 	/* IOPINS0_1 Starting address: CYDEV_GPIO_PRT1_BASE */
-	CY_SET_REG32((void *)(CYDEV_GPIO_PRT1_BASE), 0x00000063u);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_PC), 0x00200064u);
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT1_BASE), 0x000000E7u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_PC), 0x00C00064u);
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_PC2), 0x00000078u);
 
 	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
-	CY_SET_REG32((void *)(CYDEV_GPIO_PRT2_BASE), 0x0000001Fu);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x00046DB6u);
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT2_BASE), 0x0000003Fu);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x0000EDB6u);
 
 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT3_BASE), 0x00000070u);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x001B6D80u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x001B1D80u);
 
 	/* IOPINS0_4 Starting address: CYDEV_GPIO_PRT4_BASE */
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT4_PC2), 0x0000000Eu);

@@ -74,6 +74,11 @@ void User_Main_Task_Process_Loop(void)
     
     /*触碰按键检测*/
     CapSense_Port_Start();
+    
+#if USE_DEBUG_PRESSKEY
+/*按键检测事件调试*/
+    PressKey_Port_Start();
+#endif
   }
   /*never return*/
 }

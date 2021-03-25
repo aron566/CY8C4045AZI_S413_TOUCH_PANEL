@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="R_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWR_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_Set_Mode" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_Vol_Decrease" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SW_Power" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Power_ON_OFF" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWR_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_Vol_Increase" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Green_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Green_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Green_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="UART_1" BASE="0x0" SIZE="0x0" desc="Serial Communication Block" visible="true" hidden="false">
     <block name="sclk_s_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="clock_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -353,30 +356,24 @@
     </register>
   </block>
   <block name="Green_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Green_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="SW_Set_Mode" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="SW_Vol_Decrease" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="SW_Vol_Increase" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="GND_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Vol_Increase" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_lfclk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Power_ON_OFF" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Set_Mode" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Vol_Decrease" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Set_Mode" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Green_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Green_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R42" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Green_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R37" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Green_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Green_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Green_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CapSense" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="IDACComp" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -1094,19 +1091,18 @@
       <field name="BREAK_DETECT" from="11" to="11" access="RW" resetVal="" desc="Logical and of corresponding request and mask bits" hidden="false" />
     </register>
   </block>
-  <block name="LED11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="LED10" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="LED9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R40" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R39" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R38" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Green_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R42" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R41" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R43" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R39" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R41" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R40" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWR_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R44" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

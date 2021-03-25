@@ -25,7 +25,7 @@
 extern "C" {
 #endif
 /** Private defines ----------------------------------------------------------*/
-
+#define USE_DEBUG_PRESSKEY  0/**< 启用按键事件检测调试打印*/
 /** Exported typedefines -----------------------------------------------------*/
 
 /** Exported constants -------------------------------------------------------*/
@@ -36,7 +36,10 @@ extern "C" {
 
 /*按键检测初始化*/
 void PressKey_Port_Init(void);
-
+#if USE_DEBUG_PRESSKEY
+/*按键检测事件调试*/
+void PressKey_Port_Start(void);
+#endif
 #ifdef __cplusplus ///<end extern c
 }
 #endif

@@ -31,7 +31,7 @@ extern "C" {
 
 /** Private macros -----------------------------------------------------------*/
 #define WAIT_RESPONSE_SIZE_MAX            10U /**< 响应队列长度*/
-#define FRAME_TIME_OUT                    300U/**< 300ms超时检测*/
+#define FRAME_TIME_OUT                    3U  /**< 3s超时检测*/
 #define FRAME_SIZE_MIN                    5U
 #define FRAME_SIZE_MAX                    256U
 #define IS_LESS_MIN_FRAME(len)            (len < FRAME_SIZE_MIN)?1:0/**< 判断是否小于最小帧长*/
@@ -64,7 +64,6 @@ static uint8_t Send_Buf[256] = {0x7A, 0x55};/**< 发送缓冲区*/
 static uint8_t Rec_Buf[256] = {0};/**< 数据接收缓冲区*/
 static CQ_handleTypeDef *CQ_Handle = NULL;/**< 缓冲区句柄*/
 static volatile uint16_t Last_Opt_Reg_Addr = 0;
-static uint32_t LastTime = 0;/**< 超时统计*/
 
 /*建立响应队列环形缓冲区*/
 static WAIT_RESPONSE_LIST_Typedef_t Wait_Response_List[WAIT_RESPONSE_SIZE_MAX];
@@ -94,7 +93,7 @@ static void Send_Command_Frame(uint8_t *Data, uint32_t Size);
   */
 static bool Check_Read_Response_TimeOut(WAIT_RESPONSE_LIST_Typedef_t *pWait)
 {  
-  if((Timer_Port_Get_Current_Time(TIMER_MS) - pWait->Start_Time) >= FRAME_TIME_OUT)
+  if((Timer_Port_Get_Current_Time(TIMER_SEC) - pWait->Start_Time) >= FRAME_TIME_OUT)
   {
     return true;
   }
@@ -122,7 +121,6 @@ static inline void Send_Command_Frame(uint8_t *Data, uint32_t Size)
   uint16_t crc_val = modbus_crc_return_with_table(Data, Size);
   Data[Size++] = GET_U16_LOW_BYTE(crc_val);
   Data[Size++] = GET_U16_HI_BYTE(crc_val);
-  LastTime = Timer_Port_Get_Current_Time(TIMER_MS);
   Uart_Port_Send_Data(Data, Size);
 }
 
@@ -189,7 +187,7 @@ void Protocol_Set_Vol(uint32_t vol)
   WAIT_RESPONSE_LIST_Typedef_t Wait;
   Wait.Command = (uint8_t)WRITE_COMMAND;
   Wait.Reg_Addr = REG_VOL_PAR;
-  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_MS);
+  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_SEC);
   Response_List_putData(&Wait_Response_List_Handle, &Wait, 1);
 }
 
@@ -218,7 +216,7 @@ void Protocol_Set_Dev_Function(ALGORITHM_FUNCTION_Typdef_t func)
   WAIT_RESPONSE_LIST_Typedef_t Wait;
   Wait.Command = (uint8_t)WRITE_COMMAND;
   Wait.Reg_Addr = REG_ALGORI_SEL;
-  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_MS);
+  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_SEC);
   Response_List_putData(&Wait_Response_List_Handle, &Wait, 1);
 }
 
@@ -248,7 +246,7 @@ void Protocol_Set_Dev_BF_Angle(uint16_t Angle)
   WAIT_RESPONSE_LIST_Typedef_t Wait;
   Wait.Command = (uint8_t)WRITE_COMMAND;
   Wait.Reg_Addr = REG_BF_ANGLE_PAR;
-  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_MS);
+  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_SEC);
   Response_List_putData(&Wait_Response_List_Handle, &Wait, 1);
 }
 
@@ -274,7 +272,7 @@ void Protocol_Read_Vol(void)
   WAIT_RESPONSE_LIST_Typedef_t Wait;
   Wait.Command = (uint8_t)READ_COMMAND;
   Wait.Reg_Addr = REG_VOL_PAR;
-  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_MS);
+  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_SEC);
   Response_List_putData(&Wait_Response_List_Handle, &Wait, 1);
 }
 
@@ -300,7 +298,7 @@ void Protocol_Read_Dev_Function(void)
   WAIT_RESPONSE_LIST_Typedef_t Wait;
   Wait.Command = (uint8_t)READ_COMMAND;
   Wait.Reg_Addr = REG_ALGORI_SEL;
-  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_MS);
+  Wait.Start_Time = Timer_Port_Get_Current_Time(TIMER_SEC);
   Response_List_putData(&Wait_Response_List_Handle, &Wait, 1);
 }
 
