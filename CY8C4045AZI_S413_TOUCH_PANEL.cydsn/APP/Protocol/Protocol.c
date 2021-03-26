@@ -56,6 +56,9 @@ extern "C" {
 #define REG_BATTERY_INFO                  0x000A/**< 电池电量信息*/
 #define REG_BATTERY_CHARGE_STATE          0x000B/**< 电池充电状态*/
 #define REG_BF_ANGLE_PAR                  0x000C/**< BF入射角参数*/ 
+#define REG_L_CHANNEL_COMPENSATION        0x000D/**< 左耳音量补偿*/
+#define REG_R_CHANNEL_COMPENSATION        0x000E/**< 右耳音量补偿*/
+#define REG_PREAMPLIFICATION_FACTOR       0x000F/**< 前置放大系数*/
 /** Private constants --------------------------------------------------------*/
 
 /** Public variables ---------------------------------------------------------*/
