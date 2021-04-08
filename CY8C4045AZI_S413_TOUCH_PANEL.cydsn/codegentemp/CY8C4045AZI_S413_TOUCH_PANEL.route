@@ -1,34 +1,10 @@
 net ClockBlock_HFClk
 	term   ":m0s8clockblockcell.hfclk"
-	switch ":m0s8clockblockcell.hfclk==>:interrupt_7.clock"
-	term   ":interrupt_7.clock"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_10.clock"
 	term   ":interrupt_10.clock"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_8.clock"
 	term   ":interrupt_8.clock"
 end ClockBlock_HFClk
-net Net_1166
-	term   ":m0s8scbcell_0.interrupt"
-	switch ":m0s8scbcell_0.interrupt==>:interrupt_idmux_7.in_0"
-	switch ":interrupt_idmux_7.interrupt_idmux_7__out==>:interrupt_7.interrupt"
-	term   ":interrupt_7.interrupt"
-end Net_1166
-net Net_1182
-	term   ":ioport1:pin0.fb"
-	switch ":ioport1:pin0.fb==>:ioport1:smartio_mux_out0.direct_in"
-	switch ":ioport1:smartio_mux_out0.smartio_mux_out==>:ioport1:hsiom_in0.hsiom0_in"
-	switch ":ioport1:hsiom_in0.fixed_DPSLP_2==>:m0s8scbcell_0__i2c_scl__hsiom_permute.ioport1__fixed_out_p0_DPSLP_2"
-	switch ":m0s8scbcell_0__i2c_scl__hsiom_permute.m0s8scbcell_0__i2c_scl==>:m0s8scbcell_0.i2c_scl"
-	term   ":m0s8scbcell_0.i2c_scl"
-end Net_1182
-net Net_1183
-	term   ":ioport1:pin1.fb"
-	switch ":ioport1:pin1.fb==>:ioport1:smartio_mux_out1.direct_in"
-	switch ":ioport1:smartio_mux_out1.smartio_mux_out==>:ioport1:hsiom_in1.hsiom1_in"
-	switch ":ioport1:hsiom_in1.fixed_DPSLP_2==>:m0s8scbcell_0__i2c_sda__hsiom_permute.ioport1__fixed_out_p1_DPSLP_2"
-	switch ":m0s8scbcell_0__i2c_sda__hsiom_permute.m0s8scbcell_0__i2c_sda==>:m0s8scbcell_0.i2c_sda"
-	term   ":m0s8scbcell_0.i2c_sda"
-end Net_1183
 net Net_1257
 	term   ":m0s8scbcell_1.interrupt"
 	switch ":m0s8scbcell_1.interrupt==>:interrupt_idmux_8.in_0"

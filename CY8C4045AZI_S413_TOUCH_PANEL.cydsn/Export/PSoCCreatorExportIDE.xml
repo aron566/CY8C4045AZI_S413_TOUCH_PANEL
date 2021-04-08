@@ -54,18 +54,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cyfitteriar.inc</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cyfitter.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cydisabledsheets.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_BOOT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_PINS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_PVT.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_EZI2C.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_EZI2C_INT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_EZI2C.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_EZI2C_BOOT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_BOOT.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CapSense.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CapSense_Control.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CapSense_Processing.c</File>
@@ -137,30 +125,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Power_ON_OFF.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Power_ON_OFF_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Power_ON_OFF_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Set_Mode.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Set_Mode.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Set_Mode_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Set_Mode_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Decrease.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Decrease.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Decrease_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Decrease_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Increase.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Increase.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Increase_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vol_Increase_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_SCBCLK.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_SCBCLK.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_sda.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_sda.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_sda_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_sda_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_scl.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_scl.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_scl_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_scl_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_SCB_IRQ.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\EZI2C_SCB_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CapSense_ISR.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CapSense_ISR.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1_SCBCLK.c</File>

@@ -13,18 +13,10 @@
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C.c" value="SOURCE_C;CortexM0p;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C.h" value="HEADER;;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_PM.c" value="SOURCE_C;CortexM0p;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_BOOT.c" value="SOURCE_C;CortexM0p;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_PINS.h" value="HEADER;;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_PVT.h" value="HEADER;;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_EZI2C.c" value="SOURCE_C;CortexM0p;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_EZI2C_INT.c" value="SOURCE_C;CortexM0p;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_EZI2C.h" value="HEADER;;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_EZI2C_PVT.h" value="HEADER;;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_EZI2C_BOOT.c" value="SOURCE_C;CortexM0p;;;;EZI2C" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_BOOT.h" value="HEADER;;;;;EZI2C" />
+  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11.c" value="SOURCE_C;CortexM0p;;;;LED11" />
+  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11.h" value="HEADER;;;;;LED11" />
+  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11_aliases.h" value="HEADER;;;;;LED11" />
+  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11_PM.c" value="SOURCE_C;CortexM0p;;;;LED11" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\CapSense.h" value="HEADER;;;;;CapSense" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\CapSense_Control.c" value="SOURCE_C;CortexM0p;;;;CapSense" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\CapSense_Processing.c" value="SOURCE_C;CortexM0p;;;;CapSense" />
@@ -59,10 +51,6 @@
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED10.h" value="HEADER;;;;;LED10" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED10_aliases.h" value="HEADER;;;;;LED10" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED10_PM.c" value="SOURCE_C;CortexM0p;;;;LED10" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11.c" value="SOURCE_C;CortexM0p;;;;LED11" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11.h" value="HEADER;;;;;LED11" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11_aliases.h" value="HEADER;;;;;LED11" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED11_PM.c" value="SOURCE_C;CortexM0p;;;;LED11" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED4.c" value="SOURCE_C;CortexM0p;;;;LED4" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED4.h" value="HEADER;;;;;LED4" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\LED4_aliases.h" value="HEADER;;;;;LED4" />
@@ -96,30 +84,6 @@
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Power_ON_OFF.h" value="HEADER;;;;;Power_ON_OFF" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Power_ON_OFF_aliases.h" value="HEADER;;;;;Power_ON_OFF" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Power_ON_OFF_PM.c" value="SOURCE_C;CortexM0p;;;;Power_ON_OFF" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Set_Mode.c" value="SOURCE_C;CortexM0p;;;;Set_Mode" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Set_Mode.h" value="HEADER;;;;;Set_Mode" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Set_Mode_aliases.h" value="HEADER;;;;;Set_Mode" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Set_Mode_PM.c" value="SOURCE_C;CortexM0p;;;;Set_Mode" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Decrease.c" value="SOURCE_C;CortexM0p;;;;Vol_Decrease" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Decrease.h" value="HEADER;;;;;Vol_Decrease" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Decrease_aliases.h" value="HEADER;;;;;Vol_Decrease" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Decrease_PM.c" value="SOURCE_C;CortexM0p;;;;Vol_Decrease" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Increase.c" value="SOURCE_C;CortexM0p;;;;Vol_Increase" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Increase.h" value="HEADER;;;;;Vol_Increase" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Increase_aliases.h" value="HEADER;;;;;Vol_Increase" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\Vol_Increase_PM.c" value="SOURCE_C;CortexM0p;;;;Vol_Increase" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_SCBCLK.c" value="SOURCE_C;CortexM0p;;;;EZI2C_SCBCLK" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_SCBCLK.h" value="HEADER;;;;;EZI2C_SCBCLK" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_sda.c" value="SOURCE_C;CortexM0p;;;;EZI2C_sda" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_sda.h" value="HEADER;;;;;EZI2C_sda" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_sda_aliases.h" value="HEADER;;;;;EZI2C_sda" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_sda_PM.c" value="SOURCE_C;CortexM0p;;;;EZI2C_sda" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_scl.c" value="SOURCE_C;CortexM0p;;;;EZI2C_scl" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_scl.h" value="HEADER;;;;;EZI2C_scl" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_scl_aliases.h" value="HEADER;;;;;EZI2C_scl" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_scl_PM.c" value="SOURCE_C;CortexM0p;;;;EZI2C_scl" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_SCB_IRQ.c" value="SOURCE_C;CortexM0p;;;;EZI2C_SCB_IRQ" />
-  <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\EZI2C_SCB_IRQ.h" value="HEADER;;;;;EZI2C_SCB_IRQ" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\CapSense_ISR.c" value="SOURCE_C;CortexM0p;;;;CapSense_ISR" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\CapSense_ISR.h" value="HEADER;;;;;CapSense_ISR" />
   <file name="E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\codegentemp\UART_1_SCBCLK.c" value="SOURCE_C;CortexM0p;;;;UART_1_SCBCLK" />

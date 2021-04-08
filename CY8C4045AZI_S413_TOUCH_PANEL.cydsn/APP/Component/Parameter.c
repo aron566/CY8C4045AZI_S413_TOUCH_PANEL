@@ -81,11 +81,11 @@ void Parameter_Update_Vol(uint32_t Vol)
 void Parameter_Increase_Vol(void)
 {
   uint32_t Vol = Device_Par.Vol;
-  Vol = (Vol >= 100)?100:Vol+1;
-  if(Device_Par.Vol == Vol)
-  {
-    return;
-  }
+  Vol = (Vol >= 5)?5:Vol+1;
+//  if(Device_Par.Vol == Vol)
+//  {
+//    return;
+//  }
   Device_Par.Vol = Vol;
   /*更新*/
   Protocol_Set_Vol(Vol);
@@ -105,10 +105,10 @@ void Parameter_Decrease_Vol(void)
 {
   uint32_t Vol = Device_Par.Vol;
   Vol = (Vol == 0)?0:Vol-1;
-  if(Device_Par.Vol == Vol)
-  {
-    return;
-  }
+//  if(Device_Par.Vol == Vol)
+//  {
+//    return;
+//  }
   Device_Par.Vol = Vol;
   /*更新*/
   Protocol_Set_Vol(Vol);

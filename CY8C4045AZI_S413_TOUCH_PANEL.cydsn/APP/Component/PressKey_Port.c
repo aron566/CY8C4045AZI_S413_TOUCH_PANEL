@@ -262,9 +262,9 @@ void PressKey_Port_Init(void)
 {
   /*初始化按键句柄,设定激活状态值0*/
   button_init(&Power_key_Handle, Power_ON_OFF_Read, 0);
-  button_init(&Set_Mode_Key_Handle, Set_Mode_Read, 0);
-  button_init(&Vol_Decrease_Key_Handle, Vol_Decrease_Read, 0);
-  button_init(&Vol_Increase_Key_Handle, Vol_Increase_Read, 0);
+  button_init(&Set_Mode_Key_Handle, CapSense_Port_Set_Mode_Read, 0);
+  button_init(&Vol_Decrease_Key_Handle, CapSense_Port_Vol_Decrease_Read, 0);
+  button_init(&Vol_Increase_Key_Handle, CapSense_Port_Vol_Increase_Read, 0);
   button_init(&Touch_Key_Handle, Touch_Key_Read, 1);
   
   /*注册触发事件*/

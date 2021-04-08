@@ -25,7 +25,7 @@
 extern "C" {
 #endif
 /** Private defines ----------------------------------------------------------*/
-#define USE_DEBUG_PRESSKEY  0/**< 启用按键事件检测调试打印*/
+#define USE_DEBUG_PRESSKEY  1/**< 启用按键事件检测调试打印*/
 /** Exported typedefines -----------------------------------------------------*/
 
 /** Exported constants -------------------------------------------------------*/

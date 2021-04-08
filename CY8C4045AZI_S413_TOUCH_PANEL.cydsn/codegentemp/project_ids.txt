@@ -1,6 +1,6 @@
-E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\CY8C4045AZI_S413_TOUCH_PANEL.cyprj|fcf47ee0-ae30-4979-93ad-9646d996c84d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|be2027eb-5d04-4023-8f24-b03fc927028b
-C:\Users\DELL2\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|f1399b02-ff68-4b9b-aa6d-1149baef6a3f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5f9c10cc-662d-4f89-a8df-4c9aa7079148
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|54a0c035-9542-429a-8759-bf58985a6515
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f95572bf-9153-4267-ab91-e45d994fad6c
+E:\repositories\PSoC_Workspace\CY8C4045AZI_S413\CY8C4045AZI_S413_TOUCH_PANEL.cydsn\CY8C4045AZI_S413_TOUCH_PANEL.cyprj|075804b3-8695-46f4-adeb-6a8ad2afec85
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|1c0f928c-823a-41c9-927c-d3afeff70d70
+C:\Users\DELL2\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|2eed3a09-eee6-487b-baad-0882fa8eb45c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c0911e52-fe6f-4680-ac2a-7902f7167b28
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1414a58b-58cd-4d44-a245-c3139d74e779
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|90923589-2979-41b2-8286-632e4cee8370

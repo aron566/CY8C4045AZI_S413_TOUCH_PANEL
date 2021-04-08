@@ -43,6 +43,14 @@ void CapSense_Port_Start(void);
 uint8_t CapSense_Port_Get_Touch_State(void);
 /*获取触摸位置信息*/
 uint32_t CapSense_Port_Get_Touch_Postion(void);
+/*电源触摸状态读取*/
+uint8_t CapSense_Port_Power_ON_OFF_Read(void);
+/*设置模式触摸状态读取*/
+uint8_t CapSense_Port_Set_Mode_Read(void);
+/*音量减状态读取*/
+uint8_t CapSense_Port_Vol_Decrease_Read(void);
+/*音量增状态读取*/
+uint8_t CapSense_Port_Vol_Increase_Read(void);
 
 #ifdef __cplusplus ///<end extern c
 }

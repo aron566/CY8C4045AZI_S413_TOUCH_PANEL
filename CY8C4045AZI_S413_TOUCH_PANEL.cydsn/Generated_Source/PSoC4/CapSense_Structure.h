@@ -342,19 +342,19 @@ typedef struct
 typedef struct
 {
     /**
-     *  BTN0 widget RAM structure
+     *  BTN0_VOL_I widget RAM structure
      */
-    CapSense_RAM_WD_BUTTON_STRUCT btn0;
+    CapSense_RAM_WD_BUTTON_STRUCT btn0_vol_i;
 
     /**
-     *  BTN1 widget RAM structure
+     *  BTN1_VOL_D widget RAM structure
      */
-    CapSense_RAM_WD_BUTTON_STRUCT btn1;
+    CapSense_RAM_WD_BUTTON_STRUCT btn1_vol_d;
 
     /**
-     *  BTN2 widget RAM structure
+     *  BTN2_SET_MODE widget RAM structure
      */
-    CapSense_RAM_WD_BUTTON_STRUCT btn2;
+    CapSense_RAM_WD_BUTTON_STRUCT btn2_set_mode;
 
     /**
      *  SLD widget RAM structure
@@ -407,24 +407,24 @@ typedef struct
 typedef struct
 {
     /**
-     *  BTN0 sensors RAM structures array
+     *  BTN0_VOL_I sensors RAM structures array
      */
-    CapSense_RAM_SNS_STRUCT btn0 [CapSense_BTN0_NUM_SENSORS];
+    CapSense_RAM_SNS_STRUCT btn0_vol_i    [CapSense_BTN0_VOL_I_NUM_SENSORS];
 
     /**
-     *  BTN1 sensors RAM structures array
+     *  BTN1_VOL_D sensors RAM structures array
      */
-    CapSense_RAM_SNS_STRUCT btn1 [CapSense_BTN1_NUM_SENSORS];
+    CapSense_RAM_SNS_STRUCT btn1_vol_d    [CapSense_BTN1_VOL_D_NUM_SENSORS];
 
     /**
-     *  BTN2 sensors RAM structures array
+     *  BTN2_SET_MODE sensors RAM structures array
      */
-    CapSense_RAM_SNS_STRUCT btn2 [CapSense_BTN2_NUM_SENSORS];
+    CapSense_RAM_SNS_STRUCT btn2_set_mode [CapSense_BTN2_SET_MODE_NUM_SENSORS];
 
     /**
      *  SLD sensors RAM structures array
      */
-    CapSense_RAM_SNS_STRUCT sld  [CapSense_SLD_NUM_SENSORS];
+    CapSense_RAM_SNS_STRUCT sld           [CapSense_SLD_NUM_SENSORS];
 } CapSense_RAM_SNS_LIST_STRUCT;
 
 

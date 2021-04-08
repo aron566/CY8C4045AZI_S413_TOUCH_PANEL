@@ -132,44 +132,44 @@
 /*******************************************************************************
 * Defines widget IDs
 *******************************************************************************/
-#define CapSense_BTN0_WDGT_ID                   (0u)
-#define CapSense_BTN1_WDGT_ID                   (1u)
-#define CapSense_BTN2_WDGT_ID                   (2u)
+#define CapSense_BTN0_VOL_I_WDGT_ID             (0u)
+#define CapSense_BTN1_VOL_D_WDGT_ID             (1u)
+#define CapSense_BTN2_SET_MODE_WDGT_ID          (2u)
 #define CapSense_SLD_WDGT_ID                    (3u)
 
 /*******************************************************************************
 * Defines sensor IDs
 *******************************************************************************/
 
-/* BTN0 sensor names */
-#define CapSense_BTN0_SNS0_ID                   (0u)
+/* BTN0_VOL_I sensor names */
+#define CapSense_BTN0_VOL_I_SNS0_ID             (0u)
 
-/* BTN0 node names */
-#define CapSense_BTN0_RX0_TX0_ID                (0u)
+/* BTN0_VOL_I node names */
+#define CapSense_BTN0_VOL_I_RX0_TX0_ID          (0u)
 
-/* BTN0 sensor element IDs */
-#define CapSense_BTN0_RX0_ID                    (0u)
-#define CapSense_BTN0_TX0_ID                    (1u)
+/* BTN0_VOL_I sensor element IDs */
+#define CapSense_BTN0_VOL_I_RX0_ID              (0u)
+#define CapSense_BTN0_VOL_I_TX0_ID              (1u)
 
-/* BTN1 sensor names */
-#define CapSense_BTN1_SNS0_ID                   (0u)
+/* BTN1_VOL_D sensor names */
+#define CapSense_BTN1_VOL_D_SNS0_ID             (0u)
 
-/* BTN1 node names */
-#define CapSense_BTN1_RX0_TX0_ID                (0u)
+/* BTN1_VOL_D node names */
+#define CapSense_BTN1_VOL_D_RX0_TX0_ID          (0u)
 
-/* BTN1 sensor element IDs */
-#define CapSense_BTN1_RX0_ID                    (0u)
-#define CapSense_BTN1_TX0_ID                    (1u)
+/* BTN1_VOL_D sensor element IDs */
+#define CapSense_BTN1_VOL_D_RX0_ID              (0u)
+#define CapSense_BTN1_VOL_D_TX0_ID              (1u)
 
-/* BTN2 sensor names */
-#define CapSense_BTN2_SNS0_ID                   (0u)
+/* BTN2_SET_MODE sensor names */
+#define CapSense_BTN2_SET_MODE_SNS0_ID          (0u)
 
-/* BTN2 node names */
-#define CapSense_BTN2_RX0_TX0_ID                (0u)
+/* BTN2_SET_MODE node names */
+#define CapSense_BTN2_SET_MODE_RX0_TX0_ID       (0u)
 
-/* BTN2 sensor element IDs */
-#define CapSense_BTN2_RX0_ID                    (0u)
-#define CapSense_BTN2_TX0_ID                    (1u)
+/* BTN2_SET_MODE sensor element IDs */
+#define CapSense_BTN2_SET_MODE_RX0_ID           (0u)
+#define CapSense_BTN2_SET_MODE_TX0_ID           (1u)
 
 /* SLD sensor names */
 #define CapSense_SLD_SNS0_ID                    (0u)
@@ -610,8 +610,8 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 *******************************************************************************/
 
 /* ISX scan method settings */
-#define CapSense_ISX_SCANSPEED_DIVIDER        (2u)
-#define CapSense_ISX_LX_CLK_DIVIDER           (40u)
+#define CapSense_ISX_SCANSPEED_DIVIDER        (1u)
+#define CapSense_ISX_LX_CLK_DIVIDER           (80u)
 #define CapSense_ISX_IDAC_AUTOCAL_EN          (0u)
 #define CapSense_ISX_IDAC_BITS_USED           (7u)
 #define CapSense_ISX_RAWCOUNT_CAL_LEVEL       (30u)
@@ -643,70 +643,70 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
                                        || (0u != CapSense_ISX_IDAC_AUTOCAL_EN)) \
                                        || (0u != CapSense_CSD_IDAC_AUTOCAL_EN))
 /* RAM Global Parameters Definitions */
-#define CapSense_CONFIG_ID                      (0x5500u)
+#define CapSense_CONFIG_ID                      (0x3DF2u)
 #define CapSense_DEVICE_ID                      (0x0900u)
 #define CapSense_HW_CLOCK                       (0x0BB8u)
 #define CapSense_CSD0_CONFIG                    (0x0008u)
 
 /*******************************************************************************
-* BTN0 initialization values for FLASH data structure
+* BTN0_VOL_I initialization values for FLASH data structure
 *******************************************************************************/
-#define CapSense_BTN0_STATIC_CONFIG             (10249u)
-#define CapSense_BTN0_NUM_SENSORS               (1u)
+#define CapSense_BTN0_VOL_I_STATIC_CONFIG       (10249u)
+#define CapSense_BTN0_VOL_I_NUM_SENSORS         (1u)
 
 /*******************************************************************************
-* BTN0 initialization values for RAM data structure
+* BTN0_VOL_I initialization values for RAM data structure
 *******************************************************************************/
-#define CapSense_BTN0_RESOLUTION                (75u)
-#define CapSense_BTN0_FINGER_TH                 (150u)
-#define CapSense_BTN0_NOISE_TH                  (75u)
-#define CapSense_BTN0_NNOISE_TH                 (75u)
-#define CapSense_BTN0_HYSTERESIS                (20u)
-#define CapSense_BTN0_ON_DEBOUNCE               (2u)
-#define CapSense_BTN0_LOW_BSLN_RST              (30u)
-#define CapSense_BTN0_IDAC_MOD0                 (32u)
-#define CapSense_BTN0_SNS_CLK                   (80u)
-#define CapSense_BTN0_SNS_CLK_SOURCE            (0u)
+#define CapSense_BTN0_VOL_I_RESOLUTION          (75u)
+#define CapSense_BTN0_VOL_I_FINGER_TH           (150u)
+#define CapSense_BTN0_VOL_I_NOISE_TH            (75u)
+#define CapSense_BTN0_VOL_I_NNOISE_TH           (75u)
+#define CapSense_BTN0_VOL_I_HYSTERESIS          (20u)
+#define CapSense_BTN0_VOL_I_ON_DEBOUNCE         (2u)
+#define CapSense_BTN0_VOL_I_LOW_BSLN_RST        (30u)
+#define CapSense_BTN0_VOL_I_IDAC_MOD0           (32u)
+#define CapSense_BTN0_VOL_I_SNS_CLK             (80u)
+#define CapSense_BTN0_VOL_I_SNS_CLK_SOURCE      (0u)
 
 /*******************************************************************************
-* BTN1 initialization values for FLASH data structure
+* BTN1_VOL_D initialization values for FLASH data structure
 *******************************************************************************/
-#define CapSense_BTN1_STATIC_CONFIG             (10241u)
-#define CapSense_BTN1_NUM_SENSORS               (1u)
+#define CapSense_BTN1_VOL_D_STATIC_CONFIG       (10241u)
+#define CapSense_BTN1_VOL_D_NUM_SENSORS         (1u)
 
 /*******************************************************************************
-* BTN1 initialization values for RAM data structure
+* BTN1_VOL_D initialization values for RAM data structure
 *******************************************************************************/
-#define CapSense_BTN1_RESOLUTION                (50u)
-#define CapSense_BTN1_FINGER_TH                 (200u)
-#define CapSense_BTN1_NOISE_TH                  (100u)
-#define CapSense_BTN1_NNOISE_TH                 (100u)
-#define CapSense_BTN1_HYSTERESIS                (25u)
-#define CapSense_BTN1_ON_DEBOUNCE               (2u)
-#define CapSense_BTN1_LOW_BSLN_RST              (30u)
-#define CapSense_BTN1_IDAC_MOD0                 (32u)
-#define CapSense_BTN1_SNS_CLK                   (80u)
-#define CapSense_BTN1_SNS_CLK_SOURCE            (0u)
+#define CapSense_BTN1_VOL_D_RESOLUTION          (50u)
+#define CapSense_BTN1_VOL_D_FINGER_TH           (200u)
+#define CapSense_BTN1_VOL_D_NOISE_TH            (100u)
+#define CapSense_BTN1_VOL_D_NNOISE_TH           (100u)
+#define CapSense_BTN1_VOL_D_HYSTERESIS          (25u)
+#define CapSense_BTN1_VOL_D_ON_DEBOUNCE         (2u)
+#define CapSense_BTN1_VOL_D_LOW_BSLN_RST        (30u)
+#define CapSense_BTN1_VOL_D_IDAC_MOD0           (32u)
+#define CapSense_BTN1_VOL_D_SNS_CLK             (80u)
+#define CapSense_BTN1_VOL_D_SNS_CLK_SOURCE      (0u)
 
 /*******************************************************************************
-* BTN2 initialization values for FLASH data structure
+* BTN2_SET_MODE initialization values for FLASH data structure
 *******************************************************************************/
-#define CapSense_BTN2_STATIC_CONFIG             (10241u)
-#define CapSense_BTN2_NUM_SENSORS               (1u)
+#define CapSense_BTN2_SET_MODE_STATIC_CONFIG    (10241u)
+#define CapSense_BTN2_SET_MODE_NUM_SENSORS      (1u)
 
 /*******************************************************************************
-* BTN2 initialization values for RAM data structure
+* BTN2_SET_MODE initialization values for RAM data structure
 *******************************************************************************/
-#define CapSense_BTN2_RESOLUTION                (40u)
-#define CapSense_BTN2_FINGER_TH                 (200u)
-#define CapSense_BTN2_NOISE_TH                  (100u)
-#define CapSense_BTN2_NNOISE_TH                 (100u)
-#define CapSense_BTN2_HYSTERESIS                (25u)
-#define CapSense_BTN2_ON_DEBOUNCE               (2u)
-#define CapSense_BTN2_LOW_BSLN_RST              (30u)
-#define CapSense_BTN2_IDAC_MOD0                 (32u)
-#define CapSense_BTN2_SNS_CLK                   (80u)
-#define CapSense_BTN2_SNS_CLK_SOURCE            (0u)
+#define CapSense_BTN2_SET_MODE_RESOLUTION       (50u)
+#define CapSense_BTN2_SET_MODE_FINGER_TH        (200u)
+#define CapSense_BTN2_SET_MODE_NOISE_TH         (100u)
+#define CapSense_BTN2_SET_MODE_NNOISE_TH        (100u)
+#define CapSense_BTN2_SET_MODE_HYSTERESIS       (25u)
+#define CapSense_BTN2_SET_MODE_ON_DEBOUNCE      (2u)
+#define CapSense_BTN2_SET_MODE_LOW_BSLN_RST     (30u)
+#define CapSense_BTN2_SET_MODE_IDAC_MOD0        (32u)
+#define CapSense_BTN2_SET_MODE_SNS_CLK          (80u)
+#define CapSense_BTN2_SET_MODE_SNS_CLK_SOURCE   (0u)
 
 /*******************************************************************************
 * SLD initialization values for FLASH data structure
@@ -734,9 +734,9 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 #define CapSense_SLD_POSITION                   (0xFFFFu)
 
 /* RAM Sensor Parameters Definitions */
-#define CapSense_BTN0_RX0_IDAC_COMP0            (32u)
-#define CapSense_BTN1_RX0_IDAC_COMP0            (32u)
-#define CapSense_BTN2_RX0_IDAC_COMP0            (32u)
+#define CapSense_BTN0_VOL_I_RX0_IDAC_COMP0      (32u)
+#define CapSense_BTN1_VOL_D_RX0_IDAC_COMP0      (32u)
+#define CapSense_BTN2_SET_MODE_RX0_IDAC_COMP0   (32u)
 #define CapSense_SLD_SNS0_IDAC_COMP0            (32u)
 #define CapSense_SLD_SNS1_IDAC_COMP0            (32u)
 #define CapSense_SLD_SNS2_IDAC_COMP0            (32u)

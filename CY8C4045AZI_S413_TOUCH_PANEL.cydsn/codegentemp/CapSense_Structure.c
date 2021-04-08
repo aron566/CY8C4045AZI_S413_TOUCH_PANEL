@@ -78,9 +78,9 @@ CapSense_RAM_STRUCT CapSense_dsRam;
 /*******************************************************************************
 * Declares Widget's De-bounce Counters
 *******************************************************************************/
-static uint8 CapSense_debounceBTN0[CapSense_BTN0_NUM_SENSORS];
-static uint8 CapSense_debounceBTN1[CapSense_BTN1_NUM_SENSORS];
-static uint8 CapSense_debounceBTN2[CapSense_BTN2_NUM_SENSORS];
+static uint8 CapSense_debounceBTN0_VOL_I[CapSense_BTN0_VOL_I_NUM_SENSORS];
+static uint8 CapSense_debounceBTN1_VOL_D[CapSense_BTN1_VOL_D_NUM_SENSORS];
+static uint8 CapSense_debounceBTN2_SET_MODE[CapSense_BTN2_SET_MODE_NUM_SENSORS];
 static uint8 CapSense_debounceSLD[1u];
 
 
@@ -102,49 +102,49 @@ const CapSense_FLASH_STRUCT CapSense_dsFlash =
 {
     /* Flash Widget Initialization Data */
     {
-        { /* BTN0 */
+        { /* BTN0_VOL_I */
             &CapSense_ioList[0u],
-            (void *)&CapSense_dsRam.wdgtList.btn0,
-            CapSense_dsRam.snsList.btn0,
+            (void *)&CapSense_dsRam.wdgtList.btn0_vol_i,
+            CapSense_dsRam.snsList.btn0_vol_i,
             (void *)0u,
-            CapSense_debounceBTN0,
-            CapSense_BTN0_STATIC_CONFIG,
-            CapSense_BTN0_NUM_SENSORS,
+            CapSense_debounceBTN0_VOL_I,
+            CapSense_BTN0_VOL_I_STATIC_CONFIG,
+            CapSense_BTN0_VOL_I_NUM_SENSORS,
             (uint8)CapSense_WD_BUTTON_E,
             (uint8)CapSense_SENSE_METHOD_CSX_E,
-            CapSense_BTN0_NUM_SENSORS,
+            CapSense_BTN0_VOL_I_NUM_SENSORS,
             1u,
             0u,
             0u,
             0u,
         },
-        { /* BTN1 */
+        { /* BTN1_VOL_D */
             &CapSense_ioList[2u],
-            (void *)&CapSense_dsRam.wdgtList.btn1,
-            CapSense_dsRam.snsList.btn1,
+            (void *)&CapSense_dsRam.wdgtList.btn1_vol_d,
+            CapSense_dsRam.snsList.btn1_vol_d,
             (void *)0u,
-            CapSense_debounceBTN1,
-            CapSense_BTN1_STATIC_CONFIG,
-            CapSense_BTN1_NUM_SENSORS,
+            CapSense_debounceBTN1_VOL_D,
+            CapSense_BTN1_VOL_D_STATIC_CONFIG,
+            CapSense_BTN1_VOL_D_NUM_SENSORS,
             (uint8)CapSense_WD_BUTTON_E,
             (uint8)CapSense_SENSE_METHOD_CSX_E,
-            CapSense_BTN1_NUM_SENSORS,
+            CapSense_BTN1_VOL_D_NUM_SENSORS,
             1u,
             0u,
             0u,
             0u,
         },
-        { /* BTN2 */
+        { /* BTN2_SET_MODE */
             &CapSense_ioList[4u],
-            (void *)&CapSense_dsRam.wdgtList.btn2,
-            CapSense_dsRam.snsList.btn2,
+            (void *)&CapSense_dsRam.wdgtList.btn2_set_mode,
+            CapSense_dsRam.snsList.btn2_set_mode,
             (void *)0u,
-            CapSense_debounceBTN2,
-            CapSense_BTN2_STATIC_CONFIG,
-            CapSense_BTN2_NUM_SENSORS,
+            CapSense_debounceBTN2_SET_MODE,
+            CapSense_BTN2_SET_MODE_STATIC_CONFIG,
+            CapSense_BTN2_SET_MODE_NUM_SENSORS,
             (uint8)CapSense_WD_BUTTON_E,
             (uint8)CapSense_SENSE_METHOD_CSX_E,
-            CapSense_BTN2_NUM_SENSORS,
+            CapSense_BTN2_SET_MODE_NUM_SENSORS,
             1u,
             0u,
             0u,
@@ -174,7 +174,7 @@ const CapSense_FLASH_STRUCT CapSense_dsFlash =
 */
 const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
 {
-    { /* 0: BTN0_Rx0 */
+    { /* 0: BTN0_VOL_I_Rx0 */
         (reg32 *)CapSense_Rx__0__HSIOM,
         (reg32 *)CapSense_Rx__0__PC,
         (reg32 *)CapSense_Rx__0__DR,
@@ -185,7 +185,7 @@ const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
         (uint8)CapSense_Rx__0__SHIFT,
         (uint8)CapSense_Rx__0__SHIFT * 3u,
     },
-    { /* 1: BTN0_Tx */
+    { /* 1: BTN0_VOL_I_Tx */
         (reg32 *)CapSense_Tx__0__HSIOM,
         (reg32 *)CapSense_Tx__0__PC,
         (reg32 *)CapSense_Tx__0__DR,
@@ -196,7 +196,7 @@ const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
         (uint8)CapSense_Tx__0__SHIFT,
         (uint8)CapSense_Tx__0__SHIFT * 3u,
     },
-    { /* 2: BTN1_Rx0 */
+    { /* 2: BTN1_VOL_D_Rx0 */
         (reg32 *)CapSense_Rx__1__HSIOM,
         (reg32 *)CapSense_Rx__1__PC,
         (reg32 *)CapSense_Rx__1__DR,
@@ -207,7 +207,7 @@ const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
         (uint8)CapSense_Rx__1__SHIFT,
         (uint8)CapSense_Rx__1__SHIFT * 3u,
     },
-    { /* 3: BTN0_Tx ganged to BTN1_Tx */
+    { /* 3: BTN0_VOL_I_Tx ganged to BTN1_VOL_D_Tx */
         (reg32 *)CapSense_Tx__0__HSIOM,
         (reg32 *)CapSense_Tx__0__PC,
         (reg32 *)CapSense_Tx__0__DR,
@@ -218,7 +218,7 @@ const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
         (uint8)CapSense_Tx__0__SHIFT,
         (uint8)CapSense_Tx__0__SHIFT * 3u,
     },
-    { /* 4: BTN2_Rx0 */
+    { /* 4: BTN2_SET_MODE_Rx0 */
         (reg32 *)CapSense_Rx__2__HSIOM,
         (reg32 *)CapSense_Rx__2__PC,
         (reg32 *)CapSense_Rx__2__DR,
@@ -229,7 +229,7 @@ const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
         (uint8)CapSense_Rx__2__SHIFT,
         (uint8)CapSense_Rx__2__SHIFT * 3u,
     },
-    { /* 5: BTN0_Tx ganged to BTN2_Tx */
+    { /* 5: BTN0_VOL_I_Tx ganged to BTN2_SET_MODE_Tx */
         (reg32 *)CapSense_Tx__0__HSIOM,
         (reg32 *)CapSense_Tx__0__PC,
         (reg32 *)CapSense_Tx__0__DR,
@@ -305,47 +305,47 @@ const CapSense_FLASH_IO_STRUCT CapSense_ioList[CapSense_TOTAL_ELECTRODES] =
 /* Initialization data for RAM widget list */
 const CapSense_RAM_WD_LIST_STRUCT CapSense_ramWidgetInit =
 {
-    { /* BTN0 */
-        CapSense_BTN0_RESOLUTION,
-        CapSense_BTN0_FINGER_TH,
-        CapSense_BTN0_NOISE_TH,
-        CapSense_BTN0_NNOISE_TH,
-        CapSense_BTN0_HYSTERESIS,
-        CapSense_BTN0_ON_DEBOUNCE,
-        CapSense_BTN0_LOW_BSLN_RST,
+    { /* BTN0_VOL_I */
+        CapSense_BTN0_VOL_I_RESOLUTION,
+        CapSense_BTN0_VOL_I_FINGER_TH,
+        CapSense_BTN0_VOL_I_NOISE_TH,
+        CapSense_BTN0_VOL_I_NNOISE_TH,
+        CapSense_BTN0_VOL_I_HYSTERESIS,
+        CapSense_BTN0_VOL_I_ON_DEBOUNCE,
+        CapSense_BTN0_VOL_I_LOW_BSLN_RST,
         {
-            CapSense_BTN0_IDAC_MOD0,
+            CapSense_BTN0_VOL_I_IDAC_MOD0,
         },
-        CapSense_BTN0_SNS_CLK,
-        CapSense_BTN0_SNS_CLK_SOURCE,
+        CapSense_BTN0_VOL_I_SNS_CLK,
+        CapSense_BTN0_VOL_I_SNS_CLK_SOURCE,
     },
-    { /* BTN1 */
-        CapSense_BTN1_RESOLUTION,
-        CapSense_BTN1_FINGER_TH,
-        CapSense_BTN1_NOISE_TH,
-        CapSense_BTN1_NNOISE_TH,
-        CapSense_BTN1_HYSTERESIS,
-        CapSense_BTN1_ON_DEBOUNCE,
-        CapSense_BTN1_LOW_BSLN_RST,
+    { /* BTN1_VOL_D */
+        CapSense_BTN1_VOL_D_RESOLUTION,
+        CapSense_BTN1_VOL_D_FINGER_TH,
+        CapSense_BTN1_VOL_D_NOISE_TH,
+        CapSense_BTN1_VOL_D_NNOISE_TH,
+        CapSense_BTN1_VOL_D_HYSTERESIS,
+        CapSense_BTN1_VOL_D_ON_DEBOUNCE,
+        CapSense_BTN1_VOL_D_LOW_BSLN_RST,
         {
-            CapSense_BTN1_IDAC_MOD0,
+            CapSense_BTN1_VOL_D_IDAC_MOD0,
         },
-        CapSense_BTN1_SNS_CLK,
-        CapSense_BTN1_SNS_CLK_SOURCE,
+        CapSense_BTN1_VOL_D_SNS_CLK,
+        CapSense_BTN1_VOL_D_SNS_CLK_SOURCE,
     },
-    { /* BTN2 */
-        CapSense_BTN2_RESOLUTION,
-        CapSense_BTN2_FINGER_TH,
-        CapSense_BTN2_NOISE_TH,
-        CapSense_BTN2_NNOISE_TH,
-        CapSense_BTN2_HYSTERESIS,
-        CapSense_BTN2_ON_DEBOUNCE,
-        CapSense_BTN2_LOW_BSLN_RST,
+    { /* BTN2_SET_MODE */
+        CapSense_BTN2_SET_MODE_RESOLUTION,
+        CapSense_BTN2_SET_MODE_FINGER_TH,
+        CapSense_BTN2_SET_MODE_NOISE_TH,
+        CapSense_BTN2_SET_MODE_NNOISE_TH,
+        CapSense_BTN2_SET_MODE_HYSTERESIS,
+        CapSense_BTN2_SET_MODE_ON_DEBOUNCE,
+        CapSense_BTN2_SET_MODE_LOW_BSLN_RST,
         {
-            CapSense_BTN2_IDAC_MOD0,
+            CapSense_BTN2_SET_MODE_IDAC_MOD0,
         },
-        CapSense_BTN2_SNS_CLK,
-        CapSense_BTN2_SNS_CLK_SOURCE,
+        CapSense_BTN2_SET_MODE_SNS_CLK,
+        CapSense_BTN2_SET_MODE_SNS_CLK_SOURCE,
     },
     { /* SLD */
         CapSense_SLD_RESOLUTION,
@@ -370,14 +370,14 @@ const CapSense_RAM_WD_LIST_STRUCT CapSense_ramWidgetInit =
 /* IDAC Initialization Data */
 const uint8 CapSense_ramIdacInit[CapSense_TOTAL_SENSORS] =
 {
-    /* BTN0 */
-    CapSense_BTN0_RX0_IDAC_COMP0,
+    /* BTN0_VOL_I */
+    CapSense_BTN0_VOL_I_RX0_IDAC_COMP0,
 
-    /* BTN1 */
-    CapSense_BTN1_RX0_IDAC_COMP0,
+    /* BTN1_VOL_D */
+    CapSense_BTN1_VOL_D_RX0_IDAC_COMP0,
 
-    /* BTN2 */
-    CapSense_BTN2_RX0_IDAC_COMP0,
+    /* BTN2_SET_MODE */
+    CapSense_BTN2_SET_MODE_RX0_IDAC_COMP0,
 
     /* SLD */
     CapSense_SLD_SNS0_IDAC_COMP0,
